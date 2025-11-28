@@ -68,7 +68,3 @@ bash main.sh
 * `main.sh` can be used as a one-line installer for convenience
 
 ---
-
-## License
-
-Include your preferred license here (e.g., MIT, GPL).
