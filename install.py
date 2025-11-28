@@ -96,12 +96,12 @@ def run_installer(env):
     if env in ("wayland", "x11"):
         log_ok(f"Detected {env.upper()} session.")
         log_step("Launching GUI installer...")
-        gui_path = os.path.join(BASE_DIR, "gui", "Oblivian")
+        gui_path = os.path.join(BASE_DIR, "gui", "main.py")
         subprocess.run([sys.executable, gui_path])
     else:
         log_warn("No graphical session found.")
         log_step("Launching CLI installer instead...")
-        cli_path = os.path.join(BASE_DIR, "cli", "installer.py")
+        cli_path = os.path.join(BASE_DIR, "cli", "main.py")
         subprocess.run([sys.executable, cli_path])
 
 # ========= MAIN ========= #
