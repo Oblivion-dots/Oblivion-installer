@@ -35,7 +35,7 @@ On Arch-based systems, missing dependencies can be installed automatically durin
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Oblivion-dots.git
+git clone https://github.com/Oblivion-dots/Oblivion-dots.git
 cd Oblivion-Installer
 ```
 
@@ -62,7 +62,7 @@ python3 cli/main.py
 Install and launch the CLI installer directly without manual setup:
 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/yourusername/Oblivion-dots/main/main.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/theawesomeyopro1/Oblivion-dots/main/main.sh)
 ```
 
 ---
