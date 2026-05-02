@@ -1,70 +1,79 @@
 # Oblivion-dots
 
-**Oblivion-dots** is a modern, automated dotfiles installer for Linux that sets up your environment quickly and cleanly. It includes both CLI and GUI installers and handles dependencies automatically.
+**Oblivion-dots** is a modern dotfiles installer for Linux that automates setting up a complete development environment quickly and cleanly. It provides both CLI and GUI installers, with automatic dependency handling for supported systems.
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```
 Oblivion-Installer/
-├─ install.py           # Installer script
-├─ main.sh              # One-liner launch script
+├─ install.py            # Main installer entry point
+├─ main.sh               # One-line launcher script
 ├─ cli/
 │   └─ main.py          # CLI installer
 └─ gui/
-    ├─ Oblivian         # GUI installer script
-    └─ choices.sh       # Backend script for GUI
+    ├─ Oblivion         # GUI installer frontend
+    └─ choices.sh       # GUI backend logic
 ```
 
 ---
 
-## Prerequisites
+## ⚙️ Requirements
 
 * Python 3
-* GTK 3 (`gtk3` package)
-* python-gobject (`python-gobject` package)
+* Git
+* GTK 3 (`gtk3`)
+* Python GObject (`python-gobject`)
 
-The installer can automatically detect and install missing dependencies on Arch-based systems.
+On Arch-based systems, missing dependencies can be installed automatically during setup.
 
 ---
 
-## Installation
+## 🚀 Installation
 
-1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/Oblivion-dots.git
 cd Oblivion-Installer
 ```
 
-2. Run the installer:
+---
 
-* GUI: `python3 main.py`
-* CLI: `python3 cli/main.py`
+### 2. Run manually
 
-Or use the one-liner launch script:
+#### GUI Installer
 
 ```bash
-bash main.sh
+python3 install.py
+```
+
+#### CLI Installer
+
+```bash
+python3 cli/main.py
 ```
 
 ---
 
-## Features
+## ⚡ Quick Install (CLI)
 
-* Automatic environment detection (WAYLAND/X11)
-* Modular component selection
-* Clean GUI with typewriter-style welcome message
-* Logging and clipboard support
-* Lightweight and fast
+Install and launch the CLI installer directly without manual setup:
+
+```bash
+bash <(curl -sSL https://raw.githubusercontent.com/yourusername/Oblivion-dots/main/main.sh)
+```
 
 ---
 
-## Notes
+## ✨ Features
 
-* GUI installer script: `gui/Oblivian`
-* Backend script: `gui/choices.sh`
-* `main.sh` can be used as a one-line installer for convenience
+* Automatic environment detection (Wayland / X11)
+* Modular component selection
+* CLI and GUI support
+* Automatic dependency installation (Arch-based systems)
+* Lightweight and fast execution
+* Logging support for debugging
 
 ---
