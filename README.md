@@ -62,7 +62,7 @@ python3 cli/main.py
 Install and launch the CLI installer directly without manual setup:
 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/theawesomeyopro1/Oblivion-dots/main/main.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/Oblivion-dots/Oblivion-installer/main/main.sh)
 ```
 
 ---
